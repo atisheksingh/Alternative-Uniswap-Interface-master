@@ -2,6 +2,9 @@
 
 # Getting Started with Create React App
 
+please Select polygon mumbai testnet.
+add test net from here : - https://mumbai.polygonscan.com/
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
