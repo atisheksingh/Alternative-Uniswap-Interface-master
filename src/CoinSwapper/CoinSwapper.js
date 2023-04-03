@@ -409,18 +409,7 @@ function CoinSwapper(props) {
         </Paper>
       </Container>
 
-      <Grid
-        container
-        className={classes.footer}
-        direction="row"
-        justifyContent="center"
-        alignItems="flex-end"
-      >
-        <p>
-        Alternative Uniswap Interface | Get AUT for use in the bakerloo testnet{" "}
-          <a href="https://faucet.bakerloo.autonity.network/">here</a>
-        </p>
-      </Grid>
+     
     </div>
   );
 }

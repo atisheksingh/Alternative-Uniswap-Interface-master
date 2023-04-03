@@ -49,9 +49,7 @@ export async function getAccount() {
   return accounts[0];
 }
 
-//This function checks if a ERC20 token exists for a given address
-//    `address` - The Ethereum address to be checked
-//    `signer` - The current signer
+
 export function doesTokenExist(address, signer) {
   try {
     return new Contract(address, ERC20.abi, signer);
@@ -70,12 +68,7 @@ export async function getDecimals(token) {
     return decimals;
 }
 
-// This function returns an object with 2 fields: `balance` which container's the account's balance in the particular token,
-// and `symbol` which is the abbreviation of the token name. To work correctly it must be provided with 4 arguments:
-//    `accountAddress` - An Ethereum address of the current user's account
-//    `address` - An Ethereum address of the token to check for (either a token or AUT)
-//    `provider` - The current provider
-//    `signer` - The current signer
+
 export async function getBalanceAndSymbol(
   accountAddress,
   address,
@@ -172,11 +165,6 @@ export async function swapTokens(
   }
 }
 
-//This function returns the conversion rate between two token addresses
-//    `address1` - An Ethereum address of the token to swaped from (either a token or AUT)
-//    `address2` - An Ethereum address of the token to swaped to (either a token or AUT)
-//    `amountIn` - Amount of the token at address 1 to be swaped from
-//    `routerContract` - The router contract to carry out this swap
 export async function getAmountOut(
   address1,
   address2,

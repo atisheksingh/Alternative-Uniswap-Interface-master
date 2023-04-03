@@ -60,23 +60,20 @@ function ConnectWalletPage() {
             className={classes.title}
             color="common.white"
           >
-            Please connect an Ethereum wallet to your browser to use the
-            application
+            Please connect to  polygon testnet  your browser to use the
+            application.
           </Typography>
         </Paper>
       </Container>
 
       <Grid
         container
-        className={classes.footer}
+        className={classes.footer}  
         direction="row"
         justifyContent="center"
         alignItems="flex-end"
       >
-        <p>
-          Alternative Uniswap Interface | Get AUT for use in the bakerloo testnet{" "}
-          <a href="https://faucet.bakerloo.autonity.network/">here</a>
-        </p>
+   
       </Grid>
     </div>
   );
